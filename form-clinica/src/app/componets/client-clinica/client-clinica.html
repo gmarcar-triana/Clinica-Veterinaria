@@ -1,0 +1,73 @@
+<form [formGroup]="clientForm">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Example input">
+    </div>
+    <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos" placeholder="Another input">
+    </div>
+    <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <input type="text" class="form-control" id="telefono" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="nombreMascota">Nombre de la mascota</label>
+        <input type="text" class="form-control" id="nombreMascota" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="especie">Especie</label>
+        <input type="text" class="form-control" id="especie" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="apellidos">Sexo</label>
+        <select class="form-control">
+        <option>Macho</option>
+        <option>Hembra</option>
+        </select>
+    </div>  
+    <div class="form-group">
+        <label for="raza">Raza</label>
+        <input type="text" class="form-control" id="raza" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="edad">Edad en años</label>
+        <input type="text" class="form-control" id="edad" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="peso">Peso en kg</label>
+        <input type="text" class="form-control" id="peso" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="numeroMicrochip">Número de microchip</label>
+        <input type="text" class="form-control" id="numeroMicrochip" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="contraseña">Contraseña </label>
+        <input type="text" class="form-control" id="contraseña" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <label for="motivoVisita">Motivo de la primera visita</label>
+        <input type="textarea" class="form-control" id="motivoVisita" placeholder="Another input">
+    </div>  
+    <div class="form-group">
+        <input class="form-check-input" type="checkbox" value="true" id="aceptaPolitica">
+        <label class="form-check-label" for="aceptaPolitica">
+            Acepto la política de privacidad 
+        </label>
+    </div>  
+    <div class="form-group">
+        <input class="form-check-input" type="checkbox" value="true" id="resbirRecordatorios">
+        <label class="form-check-label" for="resbirRecordatorios">
+            Quiero recibir recordatorios de vacunas por email
+        </label>
+    </div>  
+
+  <button type="submit" [disabled]="onSubmit()">Log In</button>
+
+
+</form>
